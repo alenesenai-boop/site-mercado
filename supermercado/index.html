@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Supermercado — Template</title>
+  <link rel="stylesheet" href="css/estilo.css" />
+</head>
+<body>
+  <header class="topo">
+    <div class="topo__grid container">
+      <div class="topo__vazio" aria-hidden="true"></div>
+      <nav class="menu" aria-label="Menu principal">
+        <ul>
+          <li><a href="#" class="ativo">Home</a></li>
+          <li><a href="#">Oferta</a></li>
+          <li><a href="#">Produto</a></li>
+           <li><a href="podcast.html">Podcast</a></li>
+          <li><a href="#">Contato</a></li>
+         
+        </ul>
+      </nav>
+      <div class="lado-direito">
+        <a class="logo" href="#" title="Supermercado">
+          <img src="imagens/logo.png" alt="Logo do supermercado" />
+        </a>
+        <form class="busca" role="search" aria-label="Pesquisar produtos">
+          <label for="campo-busca" class="sr-only">Pesquisar produtos</label>
+          <input id="campo-busca" type="search" placeholder="Pesquisar produtos" />
+          <button type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <section class="banner container" aria-label="Banner principal">
+    <img src="imagens/banner.png" alt="Banner de ofertas do supermercado" />
+  </section>
+
+  <main class="container">
+    <h1 class="titulo">Ofertas em destaque</h1>
+    <section class="galeria" aria-label="Galeria de produtos">
+      <figure class="card">
+        <img src="imagens/produto1.png" alt="Produto 1" width="240" height="240" />
+        <figcaption>Produto 1 — descrição breve.</figcaption>
+      </figure>
+      <figure class="card">
+        <img src="imagens/produto2.png" alt="Produto 2" width="240" height="240" />
+        <figcaption>Produto 2 — descrição breve.</figcaption>
+      </figure>
+      <figure class="card">
+        <img src="imagens/produto3.png" alt="Produto 3" width="240" height="240" />
+        <figcaption>Produto 3 — descrição breve.</figcaption>
+      </figure>
+      <figure class="card">
+        <img src="imagens/produto4.png" alt="Produto 4" width="240" height="240" />
+        <figcaption>Produto 4 — descrição breve.</figcaption>
+      </figure>
+      <figure class="card">
+        <img src="imagens/produto5.png" alt="Produto 5" width="240" height="240" />
+        <figcaption>Produto 5 — descrição breve.</figcaption>
+      </figure>
+      <figure class="card">
+        <img src="imagens/produto6.png" alt="Produto 6" width="240" height="240" />
+        <figcaption>Produto 6 — descrição breve.</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape__grid">
+      <div>
+        <h2>Supermercado Exemplo</h2>
+        <p>Endereço: Rua das Ofertas, 123 — Centro</p>
+        <p>Cidade/UF — CEP 00000-000</p>
+      </div>
+      <div>
+        <h3>Contato</h3>
+        <p>Telefone: (00) 0000-0000</p>
+        <p>Email: contato@supermercado.com</p>
+      </div>
+      <div>
+        <h3>Redes Sociais</h3>
+        <ul class="redes">
+          <li><a href="#" aria-label="Instagram">Instagram</a></li>
+          <li><a href="#" aria-label="Facebook">Facebook</a></li>
+          <li><a href="#" aria-label="X">X</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">© 2025 Supermercado Exemplo. Todos os direitos reservados.</div>
+  </footer>
+</body>
+</html>
