@@ -1,71 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Podcast - Supermercado</title>
-  <link rel="stylesheet" href="css/estilo.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Podcast - Supermercado Central</title>
+  <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-  <header class="topo">
-    <div class="topo__grid container">
-      <div class="topo__vazio" aria-hidden="true"></div>
-      <nav class="menu" aria-label="Menu principal">
+  <!-- Cabeçalho -->
+  <header class="cabecalho" role="banner">
+    <div class="cabecalho__grid container">
+      <a class="logo" href="index.html" title="Supermercado Central - Início">
+        <img src="imagens/logo.png" alt="Logo Supermercado Central" width="50" height="50" />
+        <span>Supermercado Central</span>
+      </a>
+      <nav class="navegacao" role="navigation">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#">Oferta</a></li>
-          <li><a href="#">Produto</a></li>
-           <li><a href="podcast.html" class="ativo">Podcast</a></li>
-          <li><a href="#">Contato</a></li>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="podcast.html" class="ativo">Podcast</a></li>
+          <li><a href="video.html">Vídeo</a></li>
+          <li><a href="#contato">Contato</a></li>
         </ul>
       </nav>
-      <div class="lado-direito">
-        <a class="logo" href="index.html" title="Supermercado">
-          <img src="imagens/logo.png" alt="Logo do supermercado" />
-        </a>
-        <form class="busca" role="search" aria-label="Pesquisar produtos">
-          <label for="campo-busca" class="sr-only">Pesquisar produtos</label>
-          <input id="campo-busca" type="search" placeholder="Pesquisar produtos" />
-          <button type="submit">Buscar</button>
-        </form>
-      </div>
     </div>
   </header>
 
-  <main class="container">
-    <h1 class="titulo">Podcast do Supermercado</h1>
-    <p>Bem-vindo ao nosso espaço de áudio! Aqui você pode ouvir as últimas novidades, dicas de compras e promoções exclusivas.</p>
-    
-    <section class="player-audio" aria-label="Apresentação em áudio">
-      <audio controls>
-        <source src="imagens/apresentacao.mp3" type="audio/mpeg" />
-        Seu navegador não suporta o elemento de áudio.
-      </audio>
+  <!-- Conteúdo principal -->
+  <main class="conteudo-principal container">
+    <h1 class="titulo-principal">🎧 Nosso Podcast</h1>
+    <p style="text-align:center; margin-bottom: 2rem;">
+      Ouça nossos episódios com dicas, ofertas e novidades do Supermercado Central.
+    </p>
+
+    <section class="galeria-produtos">
+      <article class="card-produto">
+        <h2 style="text-align:center;">Episódio 1 - Ofertas da Semana</h2>
+        <audio controls style="width:100%; margin-top:1rem;">
+          <source src="audios/podcast1.mp3" type="audio/mpeg">
+          Seu navegador não suporta áudio HTML5.
+        </audio>
+      </article>
+
+      <article class="card-produto">
+        <h2 style="text-align:center;">Episódio 2 - Receitas com Produtos Frescos</h2>
+        <audio controls style="width:100%; margin-top:1rem;">
+          <source src="audios/podcast2.mp3" type="audio/mpeg">
+          Seu navegador não suporta áudio HTML5.
+        </audio>
+      </article>
     </section>
   </main>
 
+  <!-- Rodapé -->
   <footer class="rodape">
-    <div class="container rodape__grid">
-      <div>
-        <h2>Supermercado Exemplo</h2>
-        <p>Endereço: Rua das Ofertas, 123 — Centro</p>
-        <p>Cidade/UF — CEP 00000-000</p>
-      </div>
-      <div>
-        <h3>Contato</h3>
-        <p>Telefone: (00) 0000-0000</p>
-        <p>Email: contato@supermercado.com</p>
-      </div>
-      <div>
-        <h3>Redes Sociais</h3>
-        <ul class="redes">
-          <li><a href="#" aria-label="Instagram">Instagram</a></li>
-          <li><a href="#" aria-label="Facebook">Facebook</a></li>
-          <li><a href="#" aria-label="X">X</a></li>
-        </ul>
-      </div>
+    <div class="container">
+      <p class="copyright">
+        &copy; 2025 Supermercado Central - Todos os direitos reservados
+      </p>
     </div>
-    <div class="copy">© 2025 Supermercado Exemplo. Todos os direitos reservados.</div>
   </footer>
 </body>
 </html>
