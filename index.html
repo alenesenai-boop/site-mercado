@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Meta tags essenciais para SEO -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Título otimizado para SEO com palavras-chave relevantes -->
+  <title>Supermercado Central - Ofertas Imperdíveis, Produtos Frescos e Qualidade | Compre Online</title>
+  
+  <!-- Meta description otimizada (150-160 caracteres) -->
+  <meta name="description" content="Supermercado Central: as melhores ofertas em produtos frescos, carnes, frutas e verduras. Entrega rápida, preços baixos e qualidade garantida. Compre online agora!" />
+  
+  <!-- Palavras-chave relevantes -->
+  <meta name="keywords" content="supermercado, ofertas, produtos frescos, entrega, compras online, frutas, verduras, carnes, promoções, economia" />
+  
+  <!-- Meta tags para redes sociais (Open Graph) -->
+  <meta property="og:title" content="Supermercado Central - Ofertas Imperdíveis e Produtos Frescos" />
+  <meta property="og:description" content="Descubra as melhores ofertas em produtos de qualidade. Entrega rápida e preços que cabem no seu bolso!" />
+  <meta property="og:image" content="imagens/banner-social.jpg" />
+  <meta property="og:url" content="https://www.supermercadocentral.com.br" />
+  <meta property="og:type" content="website" />
+  
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Supermercado Central - Ofertas Imperdíveis" />
+  <meta name="twitter:description" content="As melhores ofertas em produtos frescos com entrega rápida!" />
+  <meta name="twitter:image" content="imagens/banner-social.jpg" />
+  
+  <!-- Canonical URL para evitar conteúdo duplicado -->
+  <link rel="canonical" href="https://www.supermercadocentral.com.br" />
+  <link rel="stylesheet" href="css/estilo.css">
+  
+  <!-- Dados estruturados (Schema.org) para rich snippets -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Supermercado Central",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua das Ofertas, 123",
+      "addressLocality": "Centro",
+      "addressRegion": "SP",
+      "postalCode": "00000-000",
+      "addressCountry": "BR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -23.5505,
+      "longitude": -46.6333
+    },
+    "telephone": "(11) 1234-5678",
+    "email": "contato@supermercadocentral.com.br",
+    "openingHours": "Mo-Sa 07:00-22:00, Su 08:00-20:00",
+    "priceRange": "$$"
+  }
+  </script>
+  
+  <!-- Fontes do Google Fonts - Otimizadas para performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- CSS otimizado -->
+  <style>
+    /* ========================================
+       RESET E VARIÁVEIS CSS
+    ======================================== */
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    img {
+      max-width: 100%;
+      display: block;
+      height: auto;
+    }
+    
+    ul {
+      list-style: none;
+    }
+    
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    
+    /* Variáveis CSS para consistência visual */
+    :root {
+      /* Cores primárias */
+      --cor-primaria: #2e7d32;
+      --cor-primaria-escura: #1b5e20;
+      --cor-primaria-clara: #4caf50;
+      
+      /* Cores secundárias */
+      --cor-secundaria: #ff6f00;
+      --cor-secundaria-clara: #ffb74d;
+      
+      /* Cores neutras */
+      --branco: #ffffff;
+      --cinza-claro: #f8f9fa;
+      --cinza-medio: #6c757d;
+      --cinza-escuro: #343a40;
+      --preto: #212529;
+      
+      /* Bordas e sombras */
+      --borda-padrao: #e9ecef;
+      --sombra-leve: 0 2px 8px rgba(0,0,0,0.1);
+      --sombra-media: 0 4px 16px rgba(0,0,0,0.15);
+      --sombra-forte: 0 8px 32px rgba(0,0,0,0.2);
+      
+      /* Tipografia */
+      --fonte-principal: 'Inter', system-ui, -apple-system, sans-serif;
+      --fonte-destaque: 'Poppins', sans-serif;
+      
+      /* Espaçamentos */
+      --espacamento-xs: 0.5rem;
+      --espacamento-sm: 1rem;
+      --espacamento-md: 2rem;
+      --espacamento-lg: 3rem;
+      --espacamento-xl: 4rem;
+      
+      /* Transições */
+      --transicao-rapida: 0.2s ease;
+      --transicao-media: 0.3s ease;
+    }
+    
+    /* ========================================
+       ESTILOS BASE
+    ======================================== */
+    
+    body {
+      font-family: var(--fonte-principal);
+      color: var(--cinza-escuro);
+      background: var(--branco);
+      line-height: 1.6;
+      font-size: 16px;
+    }
+    
+    /* Container responsivo */
+    .container {
+      width: min(1200px, 92%);
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    
+    /* ========================================
+       CABEÇALHO (HEADER)
+    ======================================== */
+    
+    .cabecalho {
+      background: linear-gradient(135deg, var(--branco) 0%, var(--cinza-claro) 100%);
+      border-bottom: 2px solid var(--borda-padrao);
+      box-shadow: var(--sombra-leve);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    
+    .cabecalho__grid {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: var(--espacamento-sm);
+      align-items: center;
+      padding: var(--espacamento-sm) 0;
+    }
+    
+    /* Logo otimizada */
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: var(--fonte-destaque);
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: var(--cor-primaria);
+      transition: var(--transicao-rapida);
+    }
+    
+    .logo:hover {
+      transform: scale(1.05);
+    }
+    
+    .logo img {
+      width: 50px;
+      height: 50px;
+    }
+    
+    /* Menu de navegação */
+    .navegacao ul {
+      display: flex;
+      gap: var(--espacamento-sm);
+      justify-content: center;
+    }
+    
+    .navegacao a {
+      padding: 0.75rem 1.25rem;
+      border-radius: 25px;
+      font-weight: 500;
+      color: var(--cinza-escuro);
+      transition: var(--transicao-media);
+      position: relative;
+    }
+    
+    .navegacao a::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background: var(--cor-primaria);
+      transition: var(--transicao-media);
+      transform: translateX(-50%);
+    }
+    
+    .navegacao a:hover,
+    .navegacao a.ativo {
+      background: var(--cor-primaria);
+      color: var(--branco);
+      transform: translateY(-2px);
+      box-shadow: var(--sombra-media);
+    }
+    
+    .navegacao a:hover::before,
+    .navegacao a.ativo::before {
+      width: 80%;
+    }
+    
+    /* Área de busca */
+    .area-busca {
+      display: flex;
+      gap: 0.5rem;
+    }
+    
+    .campo-busca {
+      padding: 0.75rem 1rem;
+      border: 2px solid var(--borda-padrao);
+      border-radius: 25px;
+      min-width: 250px;
+      font-size: 0.95rem;
+      transition: var(--transicao-rapida);
+    }
+    
+    .campo-busca:focus {
+      outline: none;
+      border-color: var(--cor-primaria);
+      box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.1);
+    }
+    
+    .botao-busca {
+      padding: 0.75rem 1.5rem;
+      background: linear-gradient(135deg, var(--cor-primaria) 0%, var(--cor-primaria-escura) 100%);
+      color: var(--branco);
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: var(--transicao-media);
+    }
+    
+    .botao-busca:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--sombra-media);
+    }
+    
+    /* ========================================
+       BANNER PRINCIPAL
+    ======================================== */
+    
+    .banner-principal {
+      margin: var(--espacamento-md) auto;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: var(--sombra-forte);
+      position: relative;
+    }
+    
+    .banner-principal img {
+      width: 100%;
+      height: clamp(200px, 30vw, 400px);
+      object-fit: cover;
+    }
+    
+    /* Overlay do banner com texto */
+    .banner-principal::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(45deg, rgba(46, 125, 50, 0.3) 0%, rgba(27, 94, 32, 0.1) 100%);
+      pointer-events: none;
+    }
+    
+    /* ========================================
+       CONTEÚDO PRINCIPAL
+    ======================================== */
+    
+    .conteudo-principal {
+      padding: var(--espacamento-md) 0;
+    }
+    
+    /* Títulos otimizados */
+    .titulo-principal {
+      font-family: var(--fonte-destaque);
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 800;
+      color: var(--cinza-escuro);
+      text-align: center;
+      margin-bottom: var(--espacamento-md);
+      position: relative;
+    }
+    
+    .titulo-principal::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 4px;
+      background: linear-gradient(90deg, var(--cor-primaria) 0%, var(--cor-secundaria) 100%);
+      border-radius: 2px;
+    }
+    
+    .titulo-secao {
+      font-family: var(--fonte-destaque);
+      font-size: clamp(1.5rem, 3vw, 2.5rem);
+      font-weight: 700;
+      color: var(--cinza-escuro);
+      margin-bottom: var(--espacamento-sm);
+      text-align: center;
+    }
+    
+    /* ========================================
+       GALERIA DE PRODUTOS
+    ======================================== */
+    
+    .galeria-produtos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: var(--espacamento-md);
+      margin-bottom: var(--espacamento-xl);
+    }
+    
+    /* Cards de produtos otimizados */
+    .card-produto {
+      background: var(--branco);
+      border: 2px solid var(--borda-padrao);
+      border-radius: 20px;
+      padding: 1.5rem;
+      box-shadow: var(--sombra-leve);
+      transition: var(--transicao-media);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .card-produto::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.4) 50%, transparent 100%);
+      transition: var(--transicao-media);
+    }
+    
+    .card-produto:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--sombra-forte);
+      border-color: var(--cor-primaria);
+    }
+    
+    .card-produto:hover::before {
+      left: 100%;
+    }
+    
+    .card-produto img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 15px;
+      margin-bottom: 1rem;
+      border: 1px solid var(--borda-padrao);
+    }
+    
+    .card-produto figcaption {
+      text-align: center;
+      font-weight: 500;
+      color: var(--cinza-medio);
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+    
+    /* Badge de oferta */
+    .badge-oferta {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background: linear-gradient(135deg, var(--cor-secundaria) 0%, #e65100 100%);
+      color: var(--branco);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-weight: 600;
+      font-size: 0.85rem;
+      box-shadow: var(--sombra-media);
+    }
+    
+    /* ========================================
+       SEÇÃO DE DESTAQUE
+    ======================================== */
+    
+    .secao-destaque {
+      background: linear-gradient(135deg, var(--cinza-claro) 0%, #e8f5e8 100%);
+      padding: var(--espacamento-xl) 0;
+      margin: var(--espacamento-xl) 0;
+      border-radius: 20px;
+    }
+    
+    .destaque-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--espacamento-lg);
+      align-items: center;
+    }
+    
+    .destaque-texto h2 {
+      font-family: var(--fonte-destaque);
+      font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+      font-weight: 700;
+      color: var(--cor-primaria);
+      margin-bottom: 1rem;
+    }
+    
+    .destaque-texto p {
+      font-size: 1.1rem;
+      color: var(--cinza-medio);
+      margin-bottom: 2rem;
+      line-height: 1.7;
+    }
+    
+    .botao-cta {
+      display: inline-block;
+      padding: 1rem 2rem;
+      background: linear-gradient(135deg, var(--cor-primaria) 0%, var(--cor-primaria-escura) 100%);
+      color: var(--branco);
+      border-radius: 30px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      transition: var(--transicao-media);
+      box-shadow: var(--sombra-media);
+    }
+    
+    .botao-cta:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--sombra-forte);
+    }
+    
+    /* ========================================
+       RODAPÉ
+    ======================================== */
+    
+    .rodape {
+      background: linear-gradient(135deg, #1a1a1a 0%, #2d4a2e 100%);
+      color: #e5f2e6;
+      padding: var(--espacamento-xl) 0 var(--espacamento-md);
+    }
+    
+    .rodape-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: var(--espacamento-lg);
+      margin-bottom: var(--espacamento-md);
+    }
+    
+    .rodape-secao h3 {
+      font-family: var(--fonte-destaque);
+      color: #d6ffe0;
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+    
+    .rodape-secao p,
+    .rodape-secao a {
+      color: #c8f7d2;
+      margin-bottom: 0.5rem;
+      transition: var(--transicao-rapida);
+    }
+    
+    .rodape-secao a:hover {
+      color: var(--cor-secundaria-clara);
+      transform: translateX(5px);
+    }
+    
+    .redes-sociais {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    
+    .rede-social {
+      display: inline-block;
+      padding: 0.75rem;
+      background: rgba(255,255,255,0.1);
+      color: var(--branco);
+      border-radius: 50%;
+      transition: var(--transicao-media);
+    }
+    
+    .rede-social:hover {
+      background: var(--cor-primaria);
+      transform: translateY(-3px);
+    }
+    
+    .copyright {
+      text-align: center;
+      padding: var(--espacamento-sm) 0;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      font-size: 0.9rem;
+      color: #a0b5a1;
+    }
+    
+    /* ========================================
+       ACESSIBILIDADE
+    ======================================== */
+    
+    .sr-only {
+      position: absolute !important;
+      width: 1px !important;
+      height: 1px !important;
+      padding: 0 !important;
+      margin: -1px !important;
+      overflow: hidden !important;
+      clip: rect(0, 0, 0, 0) !important;
+      white-space: nowrap !important;
+      border: 0 !important;
+    }
+    
+    /* Foco visível para navegação por teclado */
+    a:focus,
+    button:focus,
+    input:focus {
+      outline: 3px solid var(--cor-secundaria);
+      outline-offset: 2px;
+    }
+    
+    /* ========================================
+       RESPONSIVIDADE
+    ======================================== */
+    
+    /* Tablets */
+    @media (max-width: 768px) {
+      .cabecalho__grid {
+        grid-template-columns: 1fr;
+        gap: var(--espacamento-sm);
+        text-align: center;
+      }
+      
+      .navegacao ul {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      
+      .area-busca {
+        justify-content: center;
+      }
+      
+      .campo-busca {
+        min-width: 200px;
+      }
+      
+      .destaque-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      
+      .galeria-produtos {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      }
+    }
+    
+    /* Smartphones */
+    @media (max-width: 480px) {
+      .container {
+        padding: 0 0.5rem;
+      }
+      
+      .galeria-produtos {
+        grid-template-columns: 1fr;
+        gap: var(--espacamento-sm);
+      }
+      
+      .campo-busca {
+        min-width: 150px;
+      }
+      
+      .botao-busca {
+        padding: 0.75rem 1rem;
+      }
+      
+      .rodape-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+    }
+    
+    /* ========================================
+       ANIMAÇÕES E EFEITOS
+    ======================================== */
+    
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .fade-in {
+      animation: fadeInUp 0.6s ease forwards;
+    }
+    
+    /* Scroll suave */
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    /* Loading states */
+    .carregando {
+      opacity: 0.6;
+      pointer-events: none;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Cabeçalho com navegação otimizada para SEO -->
+  <header class="cabecalho" role="banner">
+    <div class="cabecalho__grid container">
+      <!-- Logo com texto para SEO -->
+      <a class="logo" href="index.html" title="Supermercado Central - Início">
+        <img src="imagens/logo.png" alt="Logo Supermercado Central" width="50" height="50" />
+        
+      </a>
+      
+      <!-- Menu de navegação com estrutura semântica -->
+      <nav class="navegacao" role="navigation" aria-label="Menu principal do site">
+        <ul>
+          <li><a href="#" class="ativo" aria-current="page">Início</a></li>
+          <li><a href="#ofertas">Ofertas</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="podcast.html">Podcast</a></li>
+          <li><a href="video.html">Vídeos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      
+      <!-- Formulário de busca otimizado -->
+      <form class="area-busca" role="search" aria-label="Buscar produtos no supermercado">
+        <label for="busca-produtos" class="sr-only">Pesquisar produtos</label>
+        <input 
+          id="busca-produtos" 
+          class="campo-busca"
+          type="search" 
+          placeholder="Buscar produtos, ofertas..." 
+          aria-describedby="busca-ajuda"
+        />
+        <button class="botao-busca" type="submit" aria-label="Executar busca">
+          🔍 Buscar
+        </button>
+        <div id="busca-ajuda" class="sr-only">Digite o nome do produto que você procura</div>
+      </form>
+    </div>
+  </header>
+
+  <!-- Banner principal com call-to-action -->
+  <section class="banner-principal container" aria-label="Ofertas principais do supermercado">
+    <img 
+      src="imagens/banner.png" 
+      alt="Banner de ofertas especiais - Descontos de até 50% em produtos selecionados" 
+      width="1200" 
+      height="400"
+      loading="lazy"
+    />
+  </section>
+
+  <!-- Conteúdo principal com estrutura semântica -->
+  <main class="conteudo-principal container" role="main">
+    
+    <!-- Título principal otimizado para SEO -->
+    <h1 class="titulo-principal">Ofertas Imperdíveis em Produtos Frescos</h1>
+    
+    <!-- Seção de produtos em destaque -->
+    <section id="ofertas" class="galeria-produtos fade-in" aria-labelledby="titulo-ofertas">
+      <h2 id="titulo-ofertas" class="sr-only">Produtos em oferta com os melhores preços</h2>
+      
+      <!-- Card de produto otimizado -->
+      <article class="card-produto" itemscope itemtype="https://schema.org/Product">
+        <div class="badge-oferta" aria-label="Produto em oferta">30% OFF</div>
+        <img 
+          src="imagens/produto1.png" 
+          alt="Maçã Gala Premium - 1kg - Produto fresco e selecionado" 
+          width="280" 
+          height="250"
+          loading="lazy"
+          itemprop="image"
+        />
+        <figcaption itemprop="name">
+          <strong>Maçã Gala Premium</strong><br>
+          <span itemprop="description">Frutas frescas selecionadas - Pacote 1kg</span>
+        </figcaption>
+        <meta itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+        <meta itemprop="price" content="4.99">
+        <meta itemprop="priceCurrency" content="BRL">
+      </article>
+
+      <article class="card-produto" itemscope itemtype="https://schema.org/Product">
+        <div class="badge-oferta">25% OFF</div>
+        <img 
+          src="imagens/produto2.png" 
+          alt="Leite Integral 1L - Produto lácteo de qualidade premium" 
+          width="280" 
+          height="250"
+          loading="lazy"
+          itemprop="image"
+        />
+        <figcaption itemprop="name">
+          <strong>Leite Integral</strong><br>
+          <span itemprop="description">Leite fresco de qualidade premium - 1 litro</span>
+        </figcaption>
+      </article>
+
+      <article class="card-produto" itemscope itemtype="https://schema.org/Product">
+        <div class="badge-oferta">40% OFF</div>
+        <img 
+          src="imagens/produto3.png" 
+          alt="Pão Francês Artesanal - Assado no dia, crocante e saboroso" 
+          width="280" 
+          height="250"
+          loading="lazy"
+          itemprop="image"
+        />
+        <figcaption itemprop="name">
+          <strong>Pão Francês Artesanal</strong><br>
+          <span itemprop="description">Pão quentinho assado diariamente</span>
+        </figcaption>
+      </article>
+
+      <article class="card-produto" itemscope itemtype="https://schema.org/Product">
+        <img 
+          src="imagens/produto4.png" 
+          alt="Carne Bovina Premium - Corte especial para churrasco" 
+          width="280" 
+          height="250"
+          loading="lazy"
+          itemprop="image"
+        />
+        <figcaption itemprop="name">
+          <strong>Carne Bovina Premium</strong><br>
+          <span itemprop="description">Cortes especiais para churrasco - Kg</span>
+        </figcaption>
+      </article>
+
+      <article class="card-produto" itemscope itemtype="https://schema.org/Product">
+        <div class="badge-oferta">20% OFF</div>
+        <img 
+          src="imagens/produto5.png" 
+          alt="Verduras Orgânicas Mistas - Produto natural sem agrotóxicos" 
+          width="280" 
+          height="250"
+          loading="lazy"
+          itemprop="image"
+        />
+        <figcaption itemprop="name">
+          <strong>Verduras Orgânicas</strong><br>
+          <span itemprop="description">Mix de verduras orgânicas selecionadas</span>
+        </figcaption>
+      </article>
+
+      <article class="card-produto" itemscope itemtype="https://schema.org/Product">
+        <img 
+          src="imagens/produto6.png" 
+          alt="Queijo Mussarela Artesanal - Produto premium feito artesanalmente" 
+          width="280" 
+          height="250"
+          loading="lazy"
+          itemprop="image"
+        />
+        <figcaption itemprop="name">
+          <strong>Queijo Mussarela</strong><br>
+          <span itemprop="description">Queijo artesanal de alta qualidade</span>
+        </figcaption>
+      </article>
+    </section>
+
+    <!-- Seção de destaque com call-to-action -->
+    <section class="secao-destaque">
+      <div class="container">
+        <div class="destaque-grid">
+          <div class="destaque-texto">
+            <h2>Por que escolher o Supermercado Central?</h2>
+            <p>Oferecemos os melhores produtos com qualidade garantida, preços justos e atendimento excepcional. Nossa equipe está sempre pronta para ajudar você a encontrar exatamente o que precisa para sua família.</p>
+            <a href="#contato" class="botao-cta">Fale Conosco</a>
+          </div>
+          <div class="destaque-imagem">
+            <img 
+              src="imagens/familia-comprando.jpg" 
+              alt="Família feliz fazendo compras no supermercado" 
+              width="500" 
+              height="350"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de informações adicionais para SEO -->
+    <section id="produtos" class="container" aria-labelledby="titulo-categorias">
+      <h2 id="titulo-categorias" class="titulo-secao">Nossas Categorias de Produtos</h2>
+      
+      <div class="categorias-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin: 2rem 0;">
+        
+        <div class="categoria-item" style="text-align: center; padding: 1.5rem; background: var(--cinza-claro); border-radius: 15px;">
+          <h3 style="color: var(--cor-primaria); margin-bottom: 1rem;">🥬 Hortifrúti</h3>
+          <p>Frutas e verduras frescas, selecionadas diariamente dos melhores fornecedores da região.</p>
+        </div>
+        
+        <div class="categoria-item" style="text-align: center; padding: 1.5rem; background: var(--cinza-claro); border-radius: 15px;">
+          <h3 style="color: var(--cor-primaria); margin-bottom: 1rem;">🥩 Açougue</h3>
+          <p>Carnes bovinas, suínas e aves de primeira qualidade, com cortes especiais e atendimento personalizado.</p>
+        </div>
+        
+        <div class="categoria-item" style="text-align: center; padding: 1.5rem; background: var(--cinza-claro); border-radius: 15px;">
+          <h3 style="color: var(--cor-primaria); margin-bottom: 1rem;">🍞 Padaria</h3>
+          <p>Pães, bolos e doces fresquinhos assados diariamente em nossa padaria própria.</p>
+        </div>
+        
+        <div class="categoria-item" style="text-align: center; padding: 1.5rem; background: var(--cinza-claro); border-radius: 15px;">
+          <h3 style="color: var(--cor-primaria); margin-bottom: 1rem;">🧀 Frios e Laticínios</h3>
+          <p>Queijos artesanais, embutidos premium e laticínios frescos de marcas reconhecidas.</p>
+        </div>
+        
+        <div class="categoria-item" style="text-align: center; padding: 1.5rem; background: var(--cinza-claro); border-radius: 15px;">
+          <h3 style="color: var(--cor-primaria); margin-bottom: 1rem;">🏠 Produtos de Limpeza</h3>
+          <p>Linha completa de produtos de limpeza e higiene para manter sua casa sempre impecável.</p>
+        </div>
+        
+        <div class="categoria-item" style="text-align: center; padding: 1.5rem; background: var(--cinza-claro); border-radius: 15px;">
+          <h3 style="color: var(--cor-primaria); margin-bottom: 1rem;">🍪 Mercearia</h3>
+          <p>Produtos não perecíveis, grãos, cereais, conservas e tudo para sua despensa.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de FAQ para SEO -->
+    <section class="faq-secao" style="background: var(--cinza-claro); padding: 3rem 0; margin: 3rem 0; border-radius: 20px;">
+      <div class="container">
+        <h2 class="titulo-secao">Perguntas Frequentes</h2>
+        
+        <div class="faq-grid" style="display: grid; gap: 1.5rem; max-width: 800px; margin: 0 auto;">
+          
+          <details class="faq-item" style="background: var(--branco); padding: 1.5rem; border-radius: 10px; box-shadow: var(--sombra-leve);">
+            <summary style="font-weight: 600; color: var(--cor-primaria); cursor: pointer; margin-bottom: 1rem;">
+              📍 Qual é o horário de funcionamento do supermercado?
+            </summary>
+            <p>Funcionamos de segunda a sábado das 7h às 22h, e aos domingos das 8h às 20h. Estamos sempre prontos para atender você!</p>
+          </details>
+          
+          <details class="faq-item" style="background: var(--branco); padding: 1.5rem; border-radius: 10px; box-shadow: var(--sombra-leve);">
+            <summary style="font-weight: 600; color: var(--cor-primaria); cursor: pointer; margin-bottom: 1rem;">
+              🚚 Vocês fazem entrega em domicílio?
+            </summary>
+            <p>Sim! Fazemos entregas na região com taxa promocional. Pedidos acima de R$ 80,00 têm frete grátis. Entre em contato para mais informações.</p>
+          </details>
+          
+          <details class="faq-item" style="background: var(--branco); padding: 1.5rem; border-radius: 10px; box-shadow: var(--sombra-leve);">
+            <summary style="font-weight: 600; color: var(--cor-primaria); cursor: pointer; margin-bottom: 1rem;">
+              💳 Quais formas de pagamento vocês aceitam?
+            </summary>
+            <p>Aceitamos dinheiro, cartão de débito, cartão de crédito, PIX e vale-alimentação. Também oferecemos crediário próprio para clientes cadastrados.</p>
+          </details>
+          
+          <details class="faq-item" style="background: var(--branco); padding: 1.5rem; border-radius: 10px; box-shadow: var(--sombra-leve);">
+            <summary style="font-weight: 600; color: var(--cor-primaria); cursor: pointer; margin-bottom: 1rem;">
+              🛒 Como posso acompanhar as ofertas semanais?
+            </summary>
+            <p>Siga nossas redes sociais, assine nossa newsletter ou visite nosso site regularmente. Sempre publicamos as melhores ofertas da semana!</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé otimizado para SEO -->
+  <footer class="rodape" role="contentinfo">
+    <div class="container">
+      <div class="rodape-grid">
+        
+        <!-- Informações da empresa -->
+        <div class="rodape-secao" itemscope itemtype="https://schema.org/LocalBusiness">
+          <h3 itemprop="name">Supermercado Central</h3>
+          <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+            <p>
+              📍 <span itemprop="streetAddress">Rua das Ofertas, 123</span><br>
+              <span itemprop="addressLocality">Centro</span> - 
+              <span itemprop="addressRegion">SP</span><br>
+              CEP: <span itemprop="postalCode">00000-000</span>
+            </p>
+          </address>
+          
+          <!-- Horários de funcionamento -->
+          <div itemprop="openingHours" content="Mo-Sa 07:00-22:00, Su 08:00-20:00">
+            <p>🕐 <strong>Horários:</strong></p>
+            <p>Seg a Sáb: 7h às 22h</p>
+            <p>Domingos: 8h às 20h</p>
+          </div>
+        </div>
+        
+        <!-- Contato -->
+        <div class="rodape-secao">
+          <h3>📞 Entre em Contato</h3>
+          <p>
+            <a href="tel:+551112345678" itemprop="telephone">
+              📱 (11) 1234-5678
+            </a>
+          </p>
+          <p>
+            <a href="mailto:contato@supermercadocentral.com.br" itemprop="email">
+              ✉️ contato@supermercadocentral.com.br
+            </a>
+          </p>
+          <p>
+            <a href="https://wa.me/5511123456789" target="_blank" rel="noopener">
+              💬 WhatsApp: (11) 12345-6789
+            </a>
+          </p>
+          
+          <!-- Redes sociais -->
+          <div class="redes-sociais">
+            <a href="https://instagram.com/supermercadocentral" class="rede-social" target="_blank" rel="noopener" aria-label="Siga no Instagram">
+              📸
+            </a>
+            <a href="https://facebook.com/supermercadocentral" class="rede-social" target="_blank" rel="noopener" aria-label="Curta no Facebook">
+              📘
+            </a>
+            <a href="https://youtube.com/@supermercadocentral" class="rede-social" target="_blank" rel="noopener" aria-label="Inscreva-se no YouTube">
+              📺
+            </a>
+          </div>
+        </div>
+        
+        <!-- Links úteis -->
+        <div class="rodape-secao">
+          <h3>🔗 Links Úteis</h3>
+          <nav aria-label="Links do rodapé">
+            <ul style="display: grid; gap: 0.5rem;">
+              <li><a href="#ofertas">🏷️ Ofertas da Semana</a></li>
+              <li><a href="podcast.html">🎧 Podcast Semanal</a></li>
+              <li><a href="video.html">📹 Nossos Vídeos</a></li>
+              <li><a href="#produtos">🛍️ Catálogo de Produtos</a></li>
+              <li><a href="/politica-privacidade.html">🔒 Política de Privacidade</a></li>
+              <li><a href="/termos-uso.html">📋 Termos de Uso</a></li>
+            </ul>
+          </nav>
+        </div>
+        
+        <!-- Newsletter -->
+        <div class="rodape-secao">
+          <h3>📧 Newsletter</h3>
+          <p>Receba nossas ofertas exclusivas!</p>
+          
+          <form class="newsletter-form" style="display: grid; gap: 0.5rem; margin-top: 1rem;" aria-label="Formulário de newsletter">
+            <label for="email-newsletter" class="sr-only">Digite seu e-mail para receber ofertas</label>
+            <input 
+              id="email-newsletter"
+              type="email" 
+              placeholder="Seu melhor e-mail"
+              required
+              style="padding: 0.75rem; border: none; border-radius: 5px; font-size: 0.9rem;"
+            />
+            <button 
+              type="submit" 
+              style="padding: 0.75rem; background: var(--cor-secundaria); color: var(--branco); border: none; border-radius: 5px; font-weight: 600; cursor: pointer;"
+            >
+              Cadastrar
+            </button>
+          </form>
+        </div>
+      </div>
+      
+      <!-- Copyright -->
+      <div class="copyright">
+        <p>&copy; 2025 Supermercado Central. Todos os direitos reservados.</p>
+        <p>Desenvolvido com ❤️ para oferecer a melhor experiência em compras</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts otimizados -->
+  <script>
+    // ========================================
+    // FUNCIONALIDADES JAVASCRIPT OTIMIZADAS
+    // ========================================
+    
+    document.addEventListener('DOMContentLoaded', function() {
+      
+      // Animação de fade-in para elementos quando entram na viewport
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+      
+      // Observar todos os cards de produtos
+      document.querySelectorAll('.card-produto').forEach(card => {
+        observer.observe(card);
+      });
+      
+      // Funcionalidade de busca com sugestões
+      const campoBusca = document.getElementById('busca-produtos');
+      const sugestoes = [
+        'maçã', 'banana', 'leite', 'pão', 'carne', 'queijo',
+        'verduras', 'frutas', 'legumes', 'frango', 'peixe',
+        'arroz', 'feijão', 'açúcar', 'café', 'óleo'
+      ];
+      
+      campoBusca.addEventListener('input', function(e) {
+        const termo = e.target.value.toLowerCase();
+        if (termo.length > 2) {
+          const sugestoesFiltradas = sugestoes.filter(item => 
+            item.includes(termo)
+          );
+          // Aqui você pode implementar a exibição das sugestões
+          console.log('Sugestões:', sugestoesFiltradas);
+        }
+      });
+      
+      // Scroll suave para links internos
+      document.querySelectorAll('a[href^="#"]').forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href');
+          const targetElement = document.querySelector(targetId);
+          
+          if (targetElement) {
+            targetElement.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });
+      
+      // Formulário de newsletter
+      const formNewsletter = document.querySelector('.newsletter-form');
+      if (formNewsletter) {
+        formNewsletter.addEventListener('submit', function(e) {
+          e.preventDefault();
+          const email = this.querySelector('input[type="email"]').value;
+          
+          // Validação básica
+          if (email && email.includes('@')) {
+            alert(`Obrigado! E-mail ${email} cadastrado com sucesso!`);
+            this.reset();
+          } else {
+            alert('Por favor, digite um e-mail válido.');
+          }
+        });
+      }
+      
+      // Lazy loading para imagens (fallback para navegadores mais antigos)
+      if ('loading' in HTMLImageElement.prototype) {
+        const images = document.querySelectorAll('img[loading="lazy"]');
+        images.forEach(img => {
+          img.addEventListener('load', function() {
+            this.classList.add('loaded');
+          });
+        });
+      }
+      
+      // Acessibilidade: navegação por teclado
+      document.addEventListener('keydown', function(e) {
+        // Esc para fechar menus/modals
+        if (e.key === 'Escape') {
+          const detailsAbertos = document.querySelectorAll('details[open]');
+          detailsAbertos.forEach(detail => detail.removeAttribute('open'));
+        }
+      });
+      
+      // Performance: debounce para evento de scroll
+      let scrollTimeout;
+      window.addEventListener('scroll', function() {
+        clearTimeout(scrollTimeout);
+        scrollTimeout = setTimeout(function() {
+          // Adicionar classe ao cabeçalho quando rolar
+          const cabecalho = document.querySelector('.cabecalho');
+          if (window.scrollY > 100) {
+            cabecalho.style.boxShadow = 'var(--sombra-forte)';
+          } else {
+            cabecalho.style.boxShadow = 'var(--sombra-leve)';
+          }
+        }, 100);
+      });
+      
+      // Analytics básico (substituir por Google Analytics em produção)
+      function trackEvent(action, category, label) {
+        console.log(`Evento rastreado: ${action} - ${category} - ${label}`);
+        // Integrar com Google Analytics ou outra ferramenta
+      }
+      
+      // Rastrear cliques em produtos
+      document.querySelectorAll('.card-produto').forEach((card, index) => {
+        card.addEventListener('click', function() {
+          const nomeProduto = this.querySelector('figcaption strong')?.textContent;
+          trackEvent('click', 'produto', nomeProduto || `produto-${index + 1}`);
+        });
+      });
+      
+      // Rastrear submissão de busca
+      document.querySelector('.area-busca').addEventListener('submit', function(e) {
+        const termoBusca = this.querySelector('input').value;
+        trackEvent('search', 'busca', termoBusca);
+      });
+      
+    });
+    
+    // ========================================
+    // SERVICE WORKER PARA PWA (OPCIONAL)
+    // ========================================
+    
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/sw.js')
+          .then(registration => {
+            console.log('Service Worker registrado com sucesso');
+          })
+          .catch(error => {
+            console.log('Falha ao registrar Service Worker');
+          });
+      });
+    }
+  </script>
+</body>
+</html>
