@@ -1681,6 +1681,10 @@ a:focus {
   }
 }
 
+.video{
+  display: flex;
+  justify-self: center;
+}
 /* Classes para forçar tema escuro */
 [data-theme="dark"] {
   --branco: #1a1a1a;
